@@ -1,3 +1,12 @@
+# TODO
+
+1. [Add files + folders](https://stackoverflow.com/questions/53854104/is-this-next-js-folder-structure-recommended)
+2. Fix gallery export
+3. [Deploy](https://www.linkedin.com/pulse/deploy-nextjs-app-github-pages-federico-antu%C3%B1a).
+
+
+# Orig
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
