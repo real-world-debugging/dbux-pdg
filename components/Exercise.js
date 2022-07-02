@@ -12,12 +12,16 @@ export default function Exercise(props) {
     }, null, 2));
   }
 
+  if (!pdgs) {
+    return <p className="text-danger">(PDG data not exported yet)</p>;
+  }
+
   if (!Array.isArray(pdgs)) {
     return <p className="text-danger">{pdgs.failedReason}</p>;
   }
 
   return <ul>
-    {pdgs.map(renderData => {
+    {pdgs.map((renderData, i) => {
       const linkData = {
         chapterGroup,
         chapter,
@@ -25,15 +29,15 @@ export default function Exercise(props) {
         pdgTitle: renderData.pdgTitle
       };
 
-      if (renderData.success !== false) {
-        return <li key={renderData.id}>
-          <PDGLink linkData={linkData}>{renderData.pdgTitle}</PDGLink>
+      if (!renderData.failedReason) {
+        return <li key={i}>
+          <PDGLink linkData={linkData}>{renderData.uniqueTitle}</PDGLink>
           <button className="ms-2" onClick={() => copyPDGArgs(renderData)}>copy</button>
         </li>;
       }
       else {
-        return <li key={renderData.id}>
-          <PDGLink linkData={linkData} className="text-danger">success: false, {renderData.failedReason}</PDGLink>
+        return <li key={i}>
+          <PDGLink linkData={linkData} className="text-danger">PDG failed: {renderData.failedReason}</PDGLink>
         </li>;
       }
     })}

@@ -1,17 +1,35 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import Script from "next/script";
+import Head from "next/head";
 import { useRouter } from 'next/router';
+import dynamic from 'next/dynamic'
 import PDG from '../components/PDG';
 // import useGraphs from '@src/hooks/useGraphs';
 
 import { parsePdgLinkId } from '../util/pdgUtil';
 
-export default function Pdg() {
+/**
+ * No SSR for graphviz stuff.
+ * 
+ * @see https://stackoverflow.com/a/57173209
+ */
+const Pdg = dynamic(() => Promise.resolve(_Pdg), {
+  ssr: false
+});
+export default Pdg;
+
+
+// function PdgLoader() {
+//   return <MultiScriptLoader scripts={requiredScripts} Component={_Pdg} />;
+// }
+
+function _Pdg() {
   const { asPath } = useRouter();
   const pdgLinkId = asPath.split('#', 2)[1];
   // const graphs = useGraphs();
   // const renderData = graphs.getById(pdgId);
   const [sampleData, setSampleData] = useState(null);
-  
+
   const linkData = parsePdgLinkId(decodeURIComponent(pdgLinkId));
 
   useEffect(() => {
@@ -25,11 +43,11 @@ export default function Pdg() {
         exercise: exerciseId,
         pdgTitle
       } = linkData;
-      const rawData = await import(`../../../data/gallery/pdg/${chapterGroup}/${chapter}/${exerciseId}/pdgData.json`);
+      const rawData = await import(`../data/pdgs/${chapterGroup}/${chapter}/${exerciseId}/pdgData.json`);
       const selected = rawData.default.find(d => d.pdgTitle === pdgTitle);
 
       document.title = 'Dbux-PDG: ' + linkData.pdgTitle;
-      
+
       setSampleData({
         chapterGroup: chapterGroup,
         chapter: chapter,
@@ -54,5 +72,8 @@ export default function Pdg() {
 
   // console.log('renderData', sampleData);
 
-  return <PDG {...sampleData}></PDG>;
+  return (<>
+    {/* Render PDG itself */}
+    <PDG {...sampleData}></PDG>
+  </>);
 }

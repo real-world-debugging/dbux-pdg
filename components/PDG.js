@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { useLocation } from '@docusaurus/router';
+// import { useLocation } from '@docusaurus/router';
 // import useGraphs from '@src/hooks/useGraphs';
 import GraphvizDot from './GraphvizDot';
 import JSALink from './JSALink';
-import PDGLink from './PDGLink';
 
 // function getDot(screenshots, index) {
 //   const screenshot = screenshots[index];
@@ -43,7 +42,7 @@ function getSameAsOrigin(screenshots, index) {
 }
 
 export default function PDG(props) {
-  const pdgId = useLocation().hash.substring(1);
+  // const pdgId = useLocation().hash.substring(1);
   const [index, setIndex] = useState(0);
   const { chapterGroup, chapter, exerciseId, renderData } = props;
 

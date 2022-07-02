@@ -1,4 +1,4 @@
-export function makePdgLinkId(data) {
+export function makePdgKey(data) {
   const {
     chapterGroup,
     chapter,

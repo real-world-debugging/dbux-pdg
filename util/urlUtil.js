@@ -3,6 +3,6 @@
  * 
  * @see https://github.com/sindresorhus/normalize-url
  */
-export function normalizeUrl(s) {
-  return s.replace(/[/]+/g, '/');
+export function normalizePath(...s) {
+  return s.join('/').replace(/[/]+/g, '/');
 }
