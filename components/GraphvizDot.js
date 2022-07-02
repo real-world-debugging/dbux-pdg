@@ -34,6 +34,6 @@ export default function GraphvizDot(props) {
       svgEl?.classList.add('h-100');
       svgEl?.classList.add('w-100');
     });
-  });
+  }, [dot]);
   return <div key={`${exerciseId}_${index}`} className="h-100" ref={graphElRef}></div>;
 }

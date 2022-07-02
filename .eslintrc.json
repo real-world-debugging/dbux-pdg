@@ -4,5 +4,9 @@
   ],
   "rules": {
     "react/no-unescaped-entities": 0
-  }
+  },
+  "ignorePatterns": [
+    "node_modules/",
+    ".next/"
+  ]
 }

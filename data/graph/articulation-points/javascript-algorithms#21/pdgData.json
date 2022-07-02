@@ -1,5 +1,0 @@
-{
-  "runFailed": true,
-  "failedReason": "Cannot read property 'dataProvider' of undefined",
-  "error": "TypeError: Cannot read property 'dataProvider' of undefined\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15937:22)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15985:43\n\tat processTicksAndRejections (internal/process/task_queues.js:93:5)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12"
-}

@@ -1,0 +1,5 @@
+{
+  "runFailed": true,
+  "failedReason": "Run failed (no application found) - code=134",
+  "error": "Error: Run failed (no application found) - code=134\n\tat PDGViewController.runAndExportPDGApplication (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16889:13)\n\tat processTicksAndRejections (internal/process/task_queues.js:93:5)\n\tat async PDGViewController.importOrRunPDGApplication (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16862:7)\n\tat async PDGGallery.getAllExercisePDGArgs (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15844:21)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16003:27\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12"
+}
