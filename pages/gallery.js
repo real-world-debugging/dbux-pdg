@@ -1,12 +1,6 @@
 import Head from 'next/head';
-import ChapterGroup from '../components/gallery/ChapterGroup';
+import ChapterGroup from '../components/ChapterGroup';
 import useGraphs from '../hooks/useGraphs';
-
-/**
- * @see https://getbootstrap.com/docs/5.2/getting-started/contents/#css-files
- */
-import 'bootstrap/dist/css/bootstrap-grid.css';
-import 'bootstrap/dist/css/bootstrap-utilities.css';
 
 /**
  * NOTE: This is the originally submitted link

@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from '@docusaurus/router';
-import PDG from '@comp/gallery/PDG';
+import { useRouter } from 'next/router';
+import PDG from '../components/PDG';
 // import useGraphs from '@src/hooks/useGraphs';
 
-/**
- * @see https://getbootstrap.com/docs/5.2/getting-started/contents/#css-files
- */
-import 'bootstrap/dist/css/bootstrap-grid.css';
-import 'bootstrap/dist/css/bootstrap-utilities.css';
-import { parsePdgLinkId } from '../../../pdgUtil';
+import { parsePdgLinkId } from '../util/pdgUtil';
 
-export default function pdg() {
-  const pdgLinkId = useLocation().hash.substring(1);
+export default function Pdg() {
+  const { asPath } = useRouter();
+  const pdgLinkId = asPath.split('#', 2)[1];
   // const graphs = useGraphs();
   // const renderData = graphs.getById(pdgId);
   const [sampleData, setSampleData] = useState(null);

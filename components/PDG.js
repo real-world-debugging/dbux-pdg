@@ -48,7 +48,7 @@ export default function PDG(props) {
   const { chapterGroup, chapter, exerciseId, renderData } = props;
 
   if (exerciseId === undefined) {
-    return <h1>pdgId "{pdgId}" not found</h1>;
+    return <h1>{`pdgId "{pdgId}" not found`}</h1>;
   }
 
   const success = renderData.success !== false;

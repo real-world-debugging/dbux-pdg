@@ -1,17 +1,13 @@
-import React from 'react';
-import useBaseUrl from '../../hooks/useBaseUrl';
-import { makePdgLinkId } from '../../pdgUtil';
-
-// const codeBaseUrl = 'https://github.com/Domiii/dbux/tree/master/';
-const PDGBaseUrl = 'gallery/pdg/pdg';
+import { makePdgLinkId } from '../util/pdgUtil';
+import { makeLink } from '../constants/paths';
 
 export default function PDGLink(props) {
   const { linkData, children, title, className } = props;
 
-  const baseUrl = useBaseUrl();
-
+  // TODO
+  const baseUrl = makeLink('gallery', 'pdg#' + encodeURIComponent(linkId));
   const linkId = makePdgLinkId(linkData);
-
+  
   const href = `${baseUrl}${PDGBaseUrl}#${encodeURIComponent(linkId)}`; // join(pkg, path)
 
   return (

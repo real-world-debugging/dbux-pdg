@@ -1,9 +1,13 @@
-// add bootstrap css 
+import Head from 'next/head';
 
-import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/globals.css'
 
-import Head from 'next/head';
+/**
+ * @see https://getbootstrap.com/docs/5.2/getting-started/contents/#css-files
+ */
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap-grid.css';
+import 'bootstrap/dist/css/bootstrap-utilities.css';
 
 
 export default function MyApp({ Component, pageProps }) {

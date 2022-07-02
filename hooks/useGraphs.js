@@ -1,4 +1,4 @@
-import rawGraphs from '../data/gallery/pdg/graphs';
+import rawGraphs from '../data/graphs';
 
 class Graphs {
   _lastId;
@@ -23,7 +23,7 @@ class Graphs {
               id,
               chapterGroup: chapterGroup.name,
               chapter: chapter.name,
-              algo: ,
+              algo: exercise.algo,
               exerciseId: exercise.id,
             };
             this._pdgById.set(id, pdgData);
