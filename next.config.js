@@ -12,7 +12,12 @@ const nextConfig = {
     "util",
     "components",
     "hooks"
-  ]
+  ],
+  experimental: {
+    images: {
+      unoptimized: true
+    }
+  }
 }
 
 module.exports = nextConfig

@@ -1,6 +1,9 @@
+# Basics
 dist
-
 node_modules
+
+# next.js
+out
 
 # Logs
 logs
