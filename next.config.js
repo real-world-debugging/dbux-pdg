@@ -13,6 +13,13 @@ const nextConfig = {
     "components",
     "hooks"
   ],
+
+  /**
+   * NOTE: Stupid next.js default settings neable experimental features by default.
+   * Won't export, if this is not explicitly disabled.
+   * 
+   * @see https://nextjs.org/docs/api-reference/next/image#unoptimized
+   */
   experimental: {
     images: {
       unoptimized: true

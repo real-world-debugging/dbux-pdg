@@ -1,0 +1,78 @@
+[
+  {
+    "pdgTitle": "breadthFirstSearch({left,right,parent,value,meta,nodeComparator})",
+    "chapterGroup": "tree",
+    "chapter": "breadth-first-search",
+    "algo": "breadth-first-search_breadthFirstSearch",
+    "testLoc": {
+      "filePath": "src/algorithms/tree/breadth-first-search/__test__/breadthFirstSearch.test.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 51,
+          "index": 229
+        },
+        "end": {
+          "line": 53,
+          "column": 3,
+          "index": 2232
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/tree/breadth-first-search/breadthFirstSearch.js",
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 72,
+          "index": 1207
+        },
+        "end": {
+          "line": 67,
+          "column": 1,
+          "index": 1984
+        }
+      }
+    },
+    "renderId": 1,
+    "failedReason": "Selected context (#718) did not return anything."
+  },
+  {
+    "pdgTitle": "breadthFirstSearch({left,right,parent,value,meta,nodeComparator}, {enterNode,leaveNode})",
+    "chapterGroup": "tree",
+    "chapter": "breadth-first-search",
+    "algo": "breadth-first-search_breadthFirstSearch",
+    "testLoc": {
+      "filePath": "src/algorithms/tree/breadth-first-search/__test__/breadthFirstSearch.test.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 51,
+          "index": 229
+        },
+        "end": {
+          "line": 53,
+          "column": 3,
+          "index": 2232
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/tree/breadth-first-search/breadthFirstSearch.js",
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 72,
+          "index": 1207
+        },
+        "end": {
+          "line": 67,
+          "column": 1,
+          "index": 1984
+        }
+      }
+    },
+    "renderId": 2,
+    "failedReason": "Selected context (#786) did not return anything."
+  }
+]

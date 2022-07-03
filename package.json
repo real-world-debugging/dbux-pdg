@@ -9,6 +9,7 @@
     "lint": "next lint",
     "_lint": "echo _lint step (noop)",
     "export": "next export",
+    "full": "yarn build && yarn export",
     "ci": "yarn install --frozen-lockfile"
   },
   "dependencies": {

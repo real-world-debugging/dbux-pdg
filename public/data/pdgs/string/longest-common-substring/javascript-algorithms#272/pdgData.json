@@ -1,0 +1,494 @@
+[
+  {
+    "pdgTitle": "longestCommonSubstring(𐌵𐌵**ABC, 𐌵𐌵--ABC)",
+    "chapterGroup": "string",
+    "chapter": "longest-common-substring",
+    "algo": "longest-common-substring_longestCommonSubstring",
+    "testLoc": {
+      "filePath": "src/algorithms/string/longest-common-substring/__test__/longestCommonSubstring.test.js",
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 46,
+          "index": 808
+        },
+        "end": {
+          "line": 25,
+          "column": 3,
+          "index": 1132
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/string/longest-common-substring/longestCommonSubstring.js",
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 65,
+          "index": 152
+        },
+        "end": {
+          "line": 69,
+          "column": 1,
+          "index": 2334
+        }
+      }
+    },
+    "renderId": 1,
+    "screenshots": [
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 20,\n  \"traceId\": 35,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 33\n  },\n  \"accessId\": 6,\n  \"valueId\": 16,\n  \"valueFromId\": 18,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**ABC\",\n  \"hasValue\": true,\n  \"_id\": 20,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 20,\n  \"traceId\": 35,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 33\n  },\n  \"accessId\": 6,\n  \"valueId\": 16,\n  \"valueFromId\": 18,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**ABC\",\n  \"hasValue\": true,\n  \"_id\": 20,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 20,\n  \"traceId\": 35,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 33\n  },\n  \"accessId\": 6,\n  \"valueId\": 16,\n  \"valueFromId\": 18,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**ABC\",\n  \"hasValue\": true,\n  \"_id\": 20,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 20,\n  \"traceId\": 35,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 33\n  },\n  \"accessId\": 6,\n  \"valueId\": 16,\n  \"valueFromId\": 18,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**ABC\",\n  \"hasValue\": true,\n  \"_id\": 20,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 20,\n  \"traceId\": 35,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 33\n  },\n  \"accessId\": 6,\n  \"valueId\": 16,\n  \"valueFromId\": 18,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**ABC\",\n  \"hasValue\": true,\n  \"_id\": 20,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 20,\n  \"traceId\": 35,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 33\n  },\n  \"accessId\": 6,\n  \"valueId\": 16,\n  \"valueFromId\": 18,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**ABC\",\n  \"hasValue\": true,\n  \"_id\": 20,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 20,\n  \"traceId\": 35,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 33\n  },\n  \"accessId\": 6,\n  \"valueId\": 16,\n  \"valueFromId\": 18,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**ABC\",\n  \"hasValue\": true,\n  \"_id\": 20,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 20,\n  \"traceId\": 35,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 33\n  },\n  \"accessId\": 6,\n  \"valueId\": 16,\n  \"valueFromId\": 18,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**ABC\",\n  \"hasValue\": true,\n  \"_id\": 20,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 20,\n  \"traceId\": 35,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 33\n  },\n  \"accessId\": 6,\n  \"valueId\": 16,\n  \"valueFromId\": 18,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**ABC\",\n  \"hasValue\": true,\n  \"_id\": 20,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 20,\n  \"traceId\": 35,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 33\n  },\n  \"accessId\": 6,\n  \"valueId\": 16,\n  \"valueFromId\": 18,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**ABC\",\n  \"hasValue\": true,\n  \"_id\": 20,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 20,\n  \"traceId\": 35,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 33\n  },\n  \"accessId\": 6,\n  \"valueId\": 16,\n  \"valueFromId\": 18,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**ABC\",\n  \"hasValue\": true,\n  \"_id\": 20,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 20,\n  \"traceId\": 35,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 33\n  },\n  \"accessId\": 6,\n  \"valueId\": 16,\n  \"valueFromId\": 18,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**ABC\",\n  \"hasValue\": true,\n  \"_id\": 20,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 20,\n  \"traceId\": 35,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 33\n  },\n  \"accessId\": 6,\n  \"valueId\": 16,\n  \"valueFromId\": 18,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**ABC\",\n  \"hasValue\": true,\n  \"_id\": 20,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 20,\n  \"traceId\": 35,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 33\n  },\n  \"accessId\": 6,\n  \"valueId\": 16,\n  \"valueFromId\": 18,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**ABC\",\n  \"hasValue\": true,\n  \"_id\": 20,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "longestCommonSubstring(𐌵𐌵**A, 𐌵𐌵--A)",
+    "chapterGroup": "string",
+    "chapter": "longest-common-substring",
+    "algo": "longest-common-substring_longestCommonSubstring",
+    "testLoc": {
+      "filePath": "src/algorithms/string/longest-common-substring/__test__/longestCommonSubstring.test.js",
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 46,
+          "index": 808
+        },
+        "end": {
+          "line": 25,
+          "column": 3,
+          "index": 1132
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/string/longest-common-substring/longestCommonSubstring.js",
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 65,
+          "index": 152
+        },
+        "end": {
+          "line": 69,
+          "column": 1,
+          "index": 2334
+        }
+      }
+    },
+    "renderId": 2,
+    "screenshots": [
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 2179,\n  \"traceId\": 2247,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 2245\n  },\n  \"accessId\": 156,\n  \"valueId\": 2175,\n  \"valueFromId\": 2177,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**A\",\n  \"hasValue\": true,\n  \"_id\": 2179,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 2179,\n  \"traceId\": 2247,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 2245\n  },\n  \"accessId\": 156,\n  \"valueId\": 2175,\n  \"valueFromId\": 2177,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**A\",\n  \"hasValue\": true,\n  \"_id\": 2179,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 2179,\n  \"traceId\": 2247,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 2245\n  },\n  \"accessId\": 156,\n  \"valueId\": 2175,\n  \"valueFromId\": 2177,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**A\",\n  \"hasValue\": true,\n  \"_id\": 2179,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 2179,\n  \"traceId\": 2247,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 2245\n  },\n  \"accessId\": 156,\n  \"valueId\": 2175,\n  \"valueFromId\": 2177,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**A\",\n  \"hasValue\": true,\n  \"_id\": 2179,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 2179,\n  \"traceId\": 2247,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 2245\n  },\n  \"accessId\": 156,\n  \"valueId\": 2175,\n  \"valueFromId\": 2177,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**A\",\n  \"hasValue\": true,\n  \"_id\": 2179,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 2179,\n  \"traceId\": 2247,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 2245\n  },\n  \"accessId\": 156,\n  \"valueId\": 2175,\n  \"valueFromId\": 2177,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**A\",\n  \"hasValue\": true,\n  \"_id\": 2179,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 2179,\n  \"traceId\": 2247,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 2245\n  },\n  \"accessId\": 156,\n  \"valueId\": 2175,\n  \"valueFromId\": 2177,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**A\",\n  \"hasValue\": true,\n  \"_id\": 2179,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 2179,\n  \"traceId\": 2247,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 2245\n  },\n  \"accessId\": 156,\n  \"valueId\": 2175,\n  \"valueFromId\": 2177,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**A\",\n  \"hasValue\": true,\n  \"_id\": 2179,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 2179,\n  \"traceId\": 2247,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 2245\n  },\n  \"accessId\": 156,\n  \"valueId\": 2175,\n  \"valueFromId\": 2177,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**A\",\n  \"hasValue\": true,\n  \"_id\": 2179,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 2179,\n  \"traceId\": 2247,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 2245\n  },\n  \"accessId\": 156,\n  \"valueId\": 2175,\n  \"valueFromId\": 2177,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**A\",\n  \"hasValue\": true,\n  \"_id\": 2179,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 2179,\n  \"traceId\": 2247,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 2245\n  },\n  \"accessId\": 156,\n  \"valueId\": 2175,\n  \"valueFromId\": 2177,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**A\",\n  \"hasValue\": true,\n  \"_id\": 2179,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 2179,\n  \"traceId\": 2247,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 2245\n  },\n  \"accessId\": 156,\n  \"valueId\": 2175,\n  \"valueFromId\": 2177,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**A\",\n  \"hasValue\": true,\n  \"_id\": 2179,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 2179,\n  \"traceId\": 2247,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 2245\n  },\n  \"accessId\": 156,\n  \"valueId\": 2175,\n  \"valueFromId\": 2177,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**A\",\n  \"hasValue\": true,\n  \"_id\": 2179,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 2179,\n  \"traceId\": 2247,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 2245\n  },\n  \"accessId\": 156,\n  \"valueId\": 2175,\n  \"valueFromId\": 2177,\n  \"inputs\": null,\n  \"value\": \"𐌵𐌵**A\",\n  \"hasValue\": true,\n  \"_id\": 2179,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "longestCommonSubstring(A买B时, 买B时GD)",
+    "chapterGroup": "string",
+    "chapter": "longest-common-substring",
+    "algo": "longest-common-substring_longestCommonSubstring",
+    "testLoc": {
+      "filePath": "src/algorithms/string/longest-common-substring/__test__/longestCommonSubstring.test.js",
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 46,
+          "index": 808
+        },
+        "end": {
+          "line": 25,
+          "column": 3,
+          "index": 1132
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/string/longest-common-substring/longestCommonSubstring.js",
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 65,
+          "index": 152
+        },
+        "end": {
+          "line": 69,
+          "column": 1,
+          "index": 2334
+        }
+      }
+    },
+    "renderId": 3,
+    "screenshots": [
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 3437,\n  \"traceId\": 3538,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 3536\n  },\n  \"accessId\": 260,\n  \"valueId\": 3433,\n  \"valueFromId\": 3435,\n  \"inputs\": null,\n  \"value\": \"A买B时\",\n  \"hasValue\": true,\n  \"_id\": 3437,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 3437,\n  \"traceId\": 3538,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 3536\n  },\n  \"accessId\": 260,\n  \"valueId\": 3433,\n  \"valueFromId\": 3435,\n  \"inputs\": null,\n  \"value\": \"A买B时\",\n  \"hasValue\": true,\n  \"_id\": 3437,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 3437,\n  \"traceId\": 3538,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 3536\n  },\n  \"accessId\": 260,\n  \"valueId\": 3433,\n  \"valueFromId\": 3435,\n  \"inputs\": null,\n  \"value\": \"A买B时\",\n  \"hasValue\": true,\n  \"_id\": 3437,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 3437,\n  \"traceId\": 3538,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 3536\n  },\n  \"accessId\": 260,\n  \"valueId\": 3433,\n  \"valueFromId\": 3435,\n  \"inputs\": null,\n  \"value\": \"A买B时\",\n  \"hasValue\": true,\n  \"_id\": 3437,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 3437,\n  \"traceId\": 3538,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 3536\n  },\n  \"accessId\": 260,\n  \"valueId\": 3433,\n  \"valueFromId\": 3435,\n  \"inputs\": null,\n  \"value\": \"A买B时\",\n  \"hasValue\": true,\n  \"_id\": 3437,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 3437,\n  \"traceId\": 3538,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 3536\n  },\n  \"accessId\": 260,\n  \"valueId\": 3433,\n  \"valueFromId\": 3435,\n  \"inputs\": null,\n  \"value\": \"A买B时\",\n  \"hasValue\": true,\n  \"_id\": 3437,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 3437,\n  \"traceId\": 3538,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 3536\n  },\n  \"accessId\": 260,\n  \"valueId\": 3433,\n  \"valueFromId\": 3435,\n  \"inputs\": null,\n  \"value\": \"A买B时\",\n  \"hasValue\": true,\n  \"_id\": 3437,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 3437,\n  \"traceId\": 3538,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 3536\n  },\n  \"accessId\": 260,\n  \"valueId\": 3433,\n  \"valueFromId\": 3435,\n  \"inputs\": null,\n  \"value\": \"A买B时\",\n  \"hasValue\": true,\n  \"_id\": 3437,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 3437,\n  \"traceId\": 3538,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 3536\n  },\n  \"accessId\": 260,\n  \"valueId\": 3433,\n  \"valueFromId\": 3435,\n  \"inputs\": null,\n  \"value\": \"A买B时\",\n  \"hasValue\": true,\n  \"_id\": 3437,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 3437,\n  \"traceId\": 3538,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 3536\n  },\n  \"accessId\": 260,\n  \"valueId\": 3433,\n  \"valueFromId\": 3435,\n  \"inputs\": null,\n  \"value\": \"A买B时\",\n  \"hasValue\": true,\n  \"_id\": 3437,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 3437,\n  \"traceId\": 3538,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 3536\n  },\n  \"accessId\": 260,\n  \"valueId\": 3433,\n  \"valueFromId\": 3435,\n  \"inputs\": null,\n  \"value\": \"A买B时\",\n  \"hasValue\": true,\n  \"_id\": 3437,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 3437,\n  \"traceId\": 3538,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 3536\n  },\n  \"accessId\": 260,\n  \"valueId\": 3433,\n  \"valueFromId\": 3435,\n  \"inputs\": null,\n  \"value\": \"A买B时\",\n  \"hasValue\": true,\n  \"_id\": 3437,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 3437,\n  \"traceId\": 3538,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 3536\n  },\n  \"accessId\": 260,\n  \"valueId\": 3433,\n  \"valueFromId\": 3435,\n  \"inputs\": null,\n  \"value\": \"A买B时\",\n  \"hasValue\": true,\n  \"_id\": 3437,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 3437,\n  \"traceId\": 3538,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 3536\n  },\n  \"accessId\": 260,\n  \"valueId\": 3433,\n  \"valueFromId\": 3435,\n  \"inputs\": null,\n  \"value\": \"A买B时\",\n  \"hasValue\": true,\n  \"_id\": 3437,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "longestCommonSubstring(After test买时 case, another_test买时)",
+    "chapterGroup": "string",
+    "chapter": "longest-common-substring",
+    "algo": "longest-common-substring_longestCommonSubstring",
+    "testLoc": {
+      "filePath": "src/algorithms/string/longest-common-substring/__test__/longestCommonSubstring.test.js",
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 46,
+          "index": 808
+        },
+        "end": {
+          "line": 25,
+          "column": 3,
+          "index": 1132
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/string/longest-common-substring/longestCommonSubstring.js",
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 65,
+          "index": 152
+        },
+        "end": {
+          "line": 69,
+          "column": 1,
+          "index": 2334
+        }
+      }
+    },
+    "renderId": 4,
+    "screenshots": [
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 4534,\n  \"traceId\": 4666,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 4664\n  },\n  \"accessId\": 356,\n  \"valueId\": 4530,\n  \"valueFromId\": 4532,\n  \"inputs\": null,\n  \"value\": \"After test买时 case\",\n  \"hasValue\": true,\n  \"_id\": 4534,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 4534,\n  \"traceId\": 4666,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 4664\n  },\n  \"accessId\": 356,\n  \"valueId\": 4530,\n  \"valueFromId\": 4532,\n  \"inputs\": null,\n  \"value\": \"After test买时 case\",\n  \"hasValue\": true,\n  \"_id\": 4534,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 4534,\n  \"traceId\": 4666,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 4664\n  },\n  \"accessId\": 356,\n  \"valueId\": 4530,\n  \"valueFromId\": 4532,\n  \"inputs\": null,\n  \"value\": \"After test买时 case\",\n  \"hasValue\": true,\n  \"_id\": 4534,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 4534,\n  \"traceId\": 4666,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 4664\n  },\n  \"accessId\": 356,\n  \"valueId\": 4530,\n  \"valueFromId\": 4532,\n  \"inputs\": null,\n  \"value\": \"After test买时 case\",\n  \"hasValue\": true,\n  \"_id\": 4534,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 4534,\n  \"traceId\": 4666,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 4664\n  },\n  \"accessId\": 356,\n  \"valueId\": 4530,\n  \"valueFromId\": 4532,\n  \"inputs\": null,\n  \"value\": \"After test买时 case\",\n  \"hasValue\": true,\n  \"_id\": 4534,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 4534,\n  \"traceId\": 4666,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 4664\n  },\n  \"accessId\": 356,\n  \"valueId\": 4530,\n  \"valueFromId\": 4532,\n  \"inputs\": null,\n  \"value\": \"After test买时 case\",\n  \"hasValue\": true,\n  \"_id\": 4534,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 4534,\n  \"traceId\": 4666,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 4664\n  },\n  \"accessId\": 356,\n  \"valueId\": 4530,\n  \"valueFromId\": 4532,\n  \"inputs\": null,\n  \"value\": \"After test买时 case\",\n  \"hasValue\": true,\n  \"_id\": 4534,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 4534,\n  \"traceId\": 4666,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 4664\n  },\n  \"accessId\": 356,\n  \"valueId\": 4530,\n  \"valueFromId\": 4532,\n  \"inputs\": null,\n  \"value\": \"After test买时 case\",\n  \"hasValue\": true,\n  \"_id\": 4534,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 4534,\n  \"traceId\": 4666,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 4664\n  },\n  \"accessId\": 356,\n  \"valueId\": 4530,\n  \"valueFromId\": 4532,\n  \"inputs\": null,\n  \"value\": \"After test买时 case\",\n  \"hasValue\": true,\n  \"_id\": 4534,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 4534,\n  \"traceId\": 4666,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 4664\n  },\n  \"accessId\": 356,\n  \"valueId\": 4530,\n  \"valueFromId\": 4532,\n  \"inputs\": null,\n  \"value\": \"After test买时 case\",\n  \"hasValue\": true,\n  \"_id\": 4534,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 4534,\n  \"traceId\": 4666,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 4664\n  },\n  \"accessId\": 356,\n  \"valueId\": 4530,\n  \"valueFromId\": 4532,\n  \"inputs\": null,\n  \"value\": \"After test买时 case\",\n  \"hasValue\": true,\n  \"_id\": 4534,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 4534,\n  \"traceId\": 4666,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 4664\n  },\n  \"accessId\": 356,\n  \"valueId\": 4530,\n  \"valueFromId\": 4532,\n  \"inputs\": null,\n  \"value\": \"After test买时 case\",\n  \"hasValue\": true,\n  \"_id\": 4534,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "crash": true,
+        "failedReason": "missing refId in dataNode: {\n  \"nodeId\": 4534,\n  \"traceId\": 4666,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 4664\n  },\n  \"accessId\": 356,\n  \"valueId\": 4530,\n  \"valueFromId\": 4532,\n  \"inputs\": null,\n  \"value\": \"After test买时 case\",\n  \"hasValue\": true,\n  \"_id\": 4534,\n  \"applicationId\": 1\n}",
+        "error": "Error: missing refId in dataNode: {\n  \"nodeId\": 4534,\n  \"traceId\": 4666,\n  \"type\": 2,\n  \"refId\": 0,\n  \"varAccess\": {\n    \"declarationTid\": 4664\n  },\n  \"accessId\": 356,\n  \"valueId\": 4530,\n  \"valueFromId\": 4532,\n  \"inputs\": null,\n  \"value\": \"After test买时 case\",\n  \"hasValue\": true,\n  \"_id\": 4534,\n  \"applicationId\": 1\n}\n\tat BasePDG.addNewRefSnapshot (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45654:13)\n\tat PDGTimelineBuilder._addSnapshotOrDataNode2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48546:670)\n\tat PDGTimelineBuilder._addDataNodeToTimeline2 (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48577:96)\n\tat PDGTimelineBuilder.addTraceToTimeline (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:48160:104)\n\tat BasePDG.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:45131:25)\n\tat ProgramDependencyGraph.build (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:50215:177)\n\tat PDGSet.newProgramDependencyGraph (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:470)\n\tat PDGSet.getOrCreatePDG (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:47451:140)\n\tat PDGGallery.getPDGScreenshotData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15900:29)\n\tat PDGGallery.getPDGRenderData (c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:15983:33)\n\tat c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:16031:47\n\tat runNextTicks (internal/process/task_queues.js:58:5)\n\tat processTimers (internal/timers.js:494:9)\n\tat async c:\\Users\\domin\\code\\dbux\\dbux-code\\dist\\bundle.js:6981:12",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  }
+]

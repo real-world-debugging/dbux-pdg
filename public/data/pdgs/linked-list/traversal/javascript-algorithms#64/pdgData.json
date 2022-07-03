@@ -1,0 +1,40 @@
+[
+  {
+    "pdgTitle": "traversal({head,tail,compare}, ƒ (anonymous))",
+    "chapterGroup": "linked-list",
+    "chapter": "traversal",
+    "algo": "traversal_traversal",
+    "testLoc": {
+      "filePath": "src/algorithms/linked-list/traversal/__test__/traversal.test.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 42,
+          "index": 192
+        },
+        "end": {
+          "line": 18,
+          "column": 3,
+          "index": 532
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/linked-list/traversal/traversal.js",
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 56,
+          "index": 243
+        },
+        "end": {
+          "line": 18,
+          "column": 1,
+          "index": 388
+        }
+      }
+    },
+    "renderId": 1,
+    "failedReason": "Selected context (#16) did not return anything."
+  }
+]

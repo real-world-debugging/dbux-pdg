@@ -10,6 +10,7 @@ import backImg from '../assets/img/back.svg';
 import { useRouter } from 'next/router';
 import { makeHref } from '../constants/paths';
 import Link from 'next/link';
+import InfoBar from './InfoBar';
 
 // function getDot(screenshots, index) {
 //   const screenshot = screenshots[index];
@@ -57,6 +58,22 @@ function getSameAsOrigin(screenshots, index) {
   }
 }
 
+function InfoButtons() {
+  return <div className="flex-align-center lh-1">
+    <InfoBar />
+  </div>;
+}
+
+function BackBtn() {
+  return (<>
+    <Link href={makeHref('/')}>
+      <a title="Go back to Gallery Overview" style={backButtonStyles} className="btn btn-outline-info p-0">
+        <Image src={backImg} width={backBtnSize} height={backBtnSize} alt="Back to Gallery" />
+      </a>
+    </Link>
+  </>);
+}
+
 export default function PDG(props) {
   // const pdgId = useLocation().hash.substring(1);
   const { chapterGroup, chapter, exerciseId, renderData } = props;
@@ -64,7 +81,13 @@ export default function PDG(props) {
   const [index, setIndex] = useState(0);
 
   if (exerciseId === undefined) {
-    return <h1>{`pdgId "{pdgId}" not found`}</h1>;
+    return (<h1>
+      <BackBtn />
+      <div className="space-1" />
+      <pre>
+        {`404 - PDG not found`}
+      </pre>
+    </h1>);
   }
 
   const success = renderData.success !== false;
@@ -74,9 +97,9 @@ export default function PDG(props) {
   let linksEl;
   if (success) {
     linksEl = <>
-      <JSALink loc={testLoc} target="_blank">Source code: Test</JSALink>
+      <JSALink loc={testLoc} target="_blank"><u>Source code: Test</u></JSALink>
       <div className="space-1"></div>
-      <JSALink loc={algoLoc} target="_blank">Source code: Algorithm</JSALink>
+      <JSALink loc={algoLoc} target="_blank"><u>Source code: Algorithm</u></JSALink>
     </>;
   }
   else {
@@ -159,12 +182,8 @@ export default function PDG(props) {
           <PDGLink title="Next exercise" pdgId={nextPdgId}>
             <button className="p-2" disabled={!nextPdgId}>&raquo;</button>
           </PDGLink> */}
-          <Link href={makeHref('/')}>
-            <a title="Go back to Gallery Overview" style={backButtonStyles} className="btn btn-outline-info p-0">
-              <Image src={backImg} width={backBtnSize} height={backBtnSize} alt="Back to Gallery" />
-            </a>
-          </Link>
-          <div className="space-1"></div>
+          <BackBtn />
+          <div className="space-1" />
           {chapterGroup}/{chapter} &gt; {renderData.pdgTitle}
         </h3>
         <div className="d-flex flex-row">
@@ -172,6 +191,8 @@ export default function PDG(props) {
           <div className="space-1"></div>
           {linksEl}
           <div className="space-1"></div>
+          <div style={{ flexGrow: 2 }} />
+          <InfoButtons />
         </div>
       </div>
 

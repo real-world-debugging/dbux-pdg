@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import ChapterGroup from '../components/ChapterGroup';
+import InfoBar from '../components/InfoBar';
 import useGraphs from '../hooks/useGraphs';
 
 /**
@@ -16,8 +17,14 @@ export default function Gallery() {
     </Head>
     <div className="container">
       <h1>Dbux-PDG Gallery</h1>
-      {graphs.chapterGroups.map(chapterGroup => {
-        return <ChapterGroup key={chapterGroup.name} chapterGroup={chapterGroup}></ChapterGroup>;
+      <div className="flex-align-center lh-1">
+        <InfoBar />
+      </div>
+      {graphs.chapterGroups.map((chapterGroup, i) => {
+        return <div key={i}>
+          <hr />
+          <ChapterGroup key={chapterGroup.name} i={i} chapterGroup={chapterGroup}></ChapterGroup>
+        </div>;
       })}
     </div>
   </>);

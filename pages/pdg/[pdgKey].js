@@ -5,6 +5,7 @@ import PDG from '../../components/PDG';
 // import useGraphs from '@src/hooks/useGraphs';
 
 import { parsePdgLinkId } from '../../util/pdgUtil';
+import { publicResourcePath } from '../../constants/paths';
 
 /**
  * No SSR for graphviz stuff.
@@ -46,11 +47,16 @@ function _Pdg() {
         chapter,
         exercise: exerciseId
       } = linkData;
-      const rawData = await import(`../../data/pdgs/${chapterGroup}/${chapter}/${exerciseId}/pdgData.json`);
 
-      const selected = linkData.pdgTitle ? 
-        rawData.default.find(d => d.pdgTitle === linkData.pdgTitle):
-        rawData.default[0];
+      const url = publicResourcePath(
+        `data/pdgs/${chapterGroup}/${chapter}/${encodeURIComponent(exerciseId)}/pdgData.json`
+      );
+      const res = await fetch(url);
+      const rawData = await res.json();
+
+      const selected = linkData.pdgTitle ?
+        rawData.find(d => d.pdgTitle === linkData.pdgTitle) :
+        rawData[0];
 
       document.title = 'Dbux-PDG: ' + selected.pdgTitle;
 

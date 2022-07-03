@@ -1,0 +1,40 @@
+[
+  {
+    "pdgTitle": "hillCipherDecrypt(This method is not implemented yet)",
+    "chapterGroup": "cryptography",
+    "chapter": "hill-cipher",
+    "algo": "hill-cipher_hillCipher",
+    "testLoc": {
+      "filePath": "src/algorithms/cryptography/hill-cipher/_test_/hillCipher.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 64,
+          "index": 169
+        },
+        "end": {
+          "line": 8,
+          "column": 3,
+          "index": 272
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/cryptography/hill-cipher/hillCipher.js",
+      "loc": {
+        "start": {
+          "line": 90,
+          "column": 39,
+          "index": 2880
+        },
+        "end": {
+          "line": 92,
+          "column": 1,
+          "index": 2942
+        }
+      }
+    },
+    "renderId": 1,
+    "failedReason": "Selected context (#6) did not have any (recorded) parameters."
+  }
+]

@@ -40,12 +40,16 @@ export default function Exercise(props) {
         if (!renderData.failedReason) {
           return <li key={i}>
             <PDGLink linkData={linkData}>{renderData.uniqueTitle}</PDGLink>
-            <button className="btn btn-info ms-2 p-0 font-08" onClick={() => copyPDGArgs(renderData)}>copy</button>
+            <button className="btn btn-info ms-2 p-0 font-08" onClick={() => copyPDGArgs(renderData)}>
+              copy
+            </button>
           </li>;
         }
         else {
           return <li key={i}>
-            <PDGLink linkData={linkData} className="btn btn-primary text-danger">PDG failed: {renderData.failedReason}</PDGLink>
+            <PDGLink linkData={linkData} className="btn btn-primary text-danger">
+              PDG failed: {renderData.failedReason}
+            </PDGLink>
           </li>;
         }
       })}
