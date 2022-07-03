@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "_lint": "echo _lint step (noop)",
     "export": "next export",
     "ci": "yarn install --frozen-lockfile"
   },
@@ -23,6 +24,6 @@
     "pre-commit": "^1.2.2"
   },
   "pre-commit": [
-    "lint"
+    "_lint"
   ]
 }
