@@ -11,9 +11,9 @@ export function publicResourcePath(...args) {
 /**
  * @see https://stackoverflow.com/a/58074221
  */
-export function makeLink(path, query) {
+export function makeHref(path, query) {
   return {
-    pathname: normalizePath(path),
+    pathname: normalizePath(BasePath, path),
     query
   };
 }

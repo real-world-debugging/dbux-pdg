@@ -23,16 +23,16 @@ jobs:
     steps:
       - name: Get files
         uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Setup Node ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install packages
-        run: npm ci
+        run: yarn ci # see https://stackoverflow.com/questions/58482655/what-is-the-closest-to-npm-ci-in-yarn
       - name: Build project
-        run: npm run build
+        run: yarn build
       - name: Export static files
-        run: npm run export
+        run: yarn export # see https://nextjs.org/docs/advanced-features/static-html-export
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
       - name: Deploy

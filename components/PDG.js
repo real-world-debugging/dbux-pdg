@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
+import cl from 'classnames';
+import Image from 'next/image';
 // import { useLocation } from '@docusaurus/router';
 // import useGraphs from '@src/hooks/useGraphs';
 import GraphvizDot from './GraphvizDot';
 import JSALink from './JSALink';
+
+import backImg from '../assets/img/back.svg';
+import { useRouter } from 'next/router';
+import { makeHref } from '../constants/paths';
+import Link from 'next/link';
 
 // function getDot(screenshots, index) {
 //   const screenshot = screenshots[index];
@@ -16,6 +23,15 @@ import JSALink from './JSALink';
 //     return null;
 //   }
 // }
+
+const backButtonStyles = {
+  lineHeight: 0,
+  textAlign: 'center',
+  width: '2rem',
+  height: '2rem'
+};
+
+const backBtnSize = 30;
 
 /**
  * hackfix: hard-coded this since old data does not contain PDGSummaryMode data yet
@@ -43,8 +59,9 @@ function getSameAsOrigin(screenshots, index) {
 
 export default function PDG(props) {
   // const pdgId = useLocation().hash.substring(1);
-  const [index, setIndex] = useState(0);
   const { chapterGroup, chapter, exerciseId, renderData } = props;
+  const router = useRouter();
+  const [index, setIndex] = useState(0);
 
   if (exerciseId === undefined) {
     return <h1>{`pdgId "{pdgId}" not found`}</h1>;
@@ -57,9 +74,9 @@ export default function PDG(props) {
   let linksEl;
   if (success) {
     linksEl = <>
-      <JSALink loc={testLoc} target="_blank">Test file link</JSALink>
+      <JSALink loc={testLoc} target="_blank">Source code: Test</JSALink>
       <div className="space-1"></div>
-      <JSALink loc={algoLoc} target="_blank">Algorithm link</JSALink>
+      <JSALink loc={algoLoc} target="_blank">Source code: Algorithm</JSALink>
     </>;
   }
   else {
@@ -97,6 +114,18 @@ export default function PDG(props) {
     }
   }
 
+  const modeButtons = screenshots.map((screenshot, i) =>
+    <button key={i} className={cl(
+      "mx-1 p-2 btn btn-info",
+      {
+        active: (i === index),
+        'bg-gray': !screenshot.dot
+      }
+    )}
+      onClick={() => setIndex(i)}>{SummaryModeIcons[i]}
+    </button>
+  );
+
   // paginationEl
   let paginationEl;
   if (success) {
@@ -108,9 +137,7 @@ export default function PDG(props) {
         &gt;
       </button>
 
-      {screenshots.map((v, i) => {
-        return <button key={i} className={"mx-1 p-2" + ((i === index) ? " active" : "")} onClick={() => setIndex(i)}>{SummaryModeIcons[i]}</button>;
-      })}
+      {modeButtons}
     </div>;
   }
   else {
@@ -132,6 +159,11 @@ export default function PDG(props) {
           <PDGLink title="Next exercise" pdgId={nextPdgId}>
             <button className="p-2" disabled={!nextPdgId}>&raquo;</button>
           </PDGLink> */}
+          <Link href={makeHref('/')}>
+            <a title="Go back to Gallery Overview" style={backButtonStyles} className="btn btn-outline-info p-0">
+              <Image src={backImg} width={backBtnSize} height={backBtnSize} alt="Back to Gallery" />
+            </a>
+          </Link>
           <div className="space-1"></div>
           {chapterGroup}/{chapter} &gt; {renderData.pdgTitle}
         </h3>

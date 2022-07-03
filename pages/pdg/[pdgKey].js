@@ -44,19 +44,21 @@ function _Pdg() {
       const {
         chapterGroup,
         chapter,
-        exercise: exerciseId,
-        pdgTitle
+        exercise: exerciseId
       } = linkData;
       const rawData = await import(`../../data/pdgs/${chapterGroup}/${chapter}/${exerciseId}/pdgData.json`);
-      const selected = rawData.default.find(d => d.pdgTitle === pdgTitle);
 
-      document.title = 'Dbux-PDG: ' + linkData.pdgTitle;
+      const selected = linkData.pdgTitle ? 
+        rawData.default.find(d => d.pdgTitle === linkData.pdgTitle):
+        rawData.default[0];
+
+      document.title = 'Dbux-PDG: ' + selected.pdgTitle;
 
       setSampleData({
         chapterGroup: chapterGroup,
         chapter: chapter,
         exerciseId,
-        pdgTitle,
+        pdgTitle: selected.pdgTitle,
         renderData: selected,
       });
     })();

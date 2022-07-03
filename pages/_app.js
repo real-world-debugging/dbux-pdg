@@ -1,13 +1,14 @@
 import Head from 'next/head';
 
-import '../styles/globals.css'
-
 /**
  * @see https://getbootstrap.com/docs/5.2/getting-started/contents/#css-files
  */
-import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-grid.css';
 import 'bootstrap/dist/css/bootstrap-utilities.css';
+
+
+import '../styles/globals.css';
 
 
 export default function MyApp({ Component, pageProps }) {

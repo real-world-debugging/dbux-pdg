@@ -11,7 +11,7 @@ export function makePdgKey(data) {
 
 export function parsePdgLinkId(s) {
   const arr = s.split('/');
-  if (arr.length !== 4) {
+  if (arr.length < 3) {
     // invalid
     return null;
   }
