@@ -1,0 +1,154 @@
+[
+  {
+    "pdgTitle": "KnapsackItem.constructor({value,weight})",
+    "chapterGroup": "sets",
+    "chapter": "knapsack-problem",
+    "algo": "knapsack-problem_KnapsackItem",
+    "testLoc": {
+      "filePath": "src/algorithms/sets/knapsack-problem/__test__/KnapsackItem.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 79,
+          "index": 160
+        },
+        "end": {
+          "line": 34,
+          "column": 3,
+          "index": 1308
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/sets/knapsack-problem/KnapsackItem.js",
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 20,
+          "index": 350
+        },
+        "end": {
+          "line": 18,
+          "column": 3,
+          "index": 721
+        }
+      }
+    },
+    "renderId": 1,
+    "failedReason": "Selected context (#5) did not return anything."
+  },
+  {
+    "pdgTitle": "KnapsackItem.toString()",
+    "chapterGroup": "sets",
+    "chapter": "knapsack-problem",
+    "algo": "knapsack-problem_KnapsackItem",
+    "testLoc": {
+      "filePath": "src/algorithms/sets/knapsack-problem/__test__/KnapsackItem.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 79,
+          "index": 160
+        },
+        "end": {
+          "line": 34,
+          "column": 3,
+          "index": 1308
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/sets/knapsack-problem/KnapsackItem.js",
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 13,
+          "index": 1044
+        },
+        "end": {
+          "line": 36,
+          "column": 3,
+          "index": 1115
+        }
+      }
+    },
+    "renderId": 2,
+    "failedReason": "Selected context (#7) did not have any (recorded) parameters."
+  },
+  {
+    "pdgTitle": "KnapsackItem.toString()",
+    "chapterGroup": "sets",
+    "chapter": "knapsack-problem",
+    "algo": "knapsack-problem_KnapsackItem",
+    "testLoc": {
+      "filePath": "src/algorithms/sets/knapsack-problem/__test__/KnapsackItem.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 79,
+          "index": 160
+        },
+        "end": {
+          "line": 34,
+          "column": 3,
+          "index": 1308
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/sets/knapsack-problem/KnapsackItem.js",
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 13,
+          "index": 1044
+        },
+        "end": {
+          "line": 36,
+          "column": 3,
+          "index": 1115
+        }
+      }
+    },
+    "renderId": 3,
+    "failedReason": "Selected context (#11) did not have any (recorded) parameters."
+  },
+  {
+    "pdgTitle": "KnapsackItem.toString()",
+    "chapterGroup": "sets",
+    "chapter": "knapsack-problem",
+    "algo": "knapsack-problem_KnapsackItem",
+    "testLoc": {
+      "filePath": "src/algorithms/sets/knapsack-problem/__test__/KnapsackItem.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 79,
+          "index": 160
+        },
+        "end": {
+          "line": 34,
+          "column": 3,
+          "index": 1308
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/sets/knapsack-problem/KnapsackItem.js",
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 13,
+          "index": 1044
+        },
+        "end": {
+          "line": 36,
+          "column": 3,
+          "index": 1115
+        }
+      }
+    },
+    "renderId": 4,
+    "failedReason": "Selected context (#15) did not have any (recorded) parameters."
+  }
+]

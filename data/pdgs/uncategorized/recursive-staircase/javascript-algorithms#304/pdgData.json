@@ -1,0 +1,1310 @@
+[
+  {
+    "pdgTitle": "recursiveStaircaseIT(-1)",
+    "chapterGroup": "uncategorized",
+    "chapter": "recursive-staircase",
+    "algo": "recursive-staircase_recursiveStaircaseIT",
+    "testLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/__test__/recursiveStaircaseIT.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 75,
+          "index": 180
+        },
+        "end": {
+          "line": 17,
+          "column": 3,
+          "index": 745
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseIT.js",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 56,
+          "index": 246
+        },
+        "end": {
+          "line": 33,
+          "column": 1,
+          "index": 1152
+        }
+      }
+    },
+    "renderId": 1,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">-1</FONT></TD>\n  </TR>\n</TABLE>>];\n  subgraph cluster_group_4 {\n    id=4;\n    label=\"if\";\n    color=\"gray\";\n    fontcolor=\"yellow\";\n    5 [id=5,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  }\n  2 -> 5[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "sameAs": 5,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "recursiveStaircaseIT(0)",
+    "chapterGroup": "uncategorized",
+    "chapter": "recursive-staircase",
+    "algo": "recursive-staircase_recursiveStaircaseIT",
+    "testLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/__test__/recursiveStaircaseIT.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 75,
+          "index": 180
+        },
+        "end": {
+          "line": 17,
+          "column": 3,
+          "index": 745
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseIT.js",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 56,
+          "index": 246
+        },
+        "end": {
+          "line": 33,
+          "column": 1,
+          "index": 1152
+        }
+      }
+    },
+    "renderId": 2,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  subgraph cluster_group_4 {\n    id=4;\n    label=\"if\";\n    color=\"gray\";\n    fontcolor=\"yellow\";\n    5 [id=5,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  }\n  2 -> 5[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "sameAs": 5,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "recursiveStaircaseIT(1)",
+    "chapterGroup": "uncategorized",
+    "chapter": "recursive-staircase",
+    "algo": "recursive-staircase_recursiveStaircaseIT",
+    "testLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/__test__/recursiveStaircaseIT.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 75,
+          "index": 180
+        },
+        "end": {
+          "line": 17,
+          "column": 3,
+          "index": 745
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseIT.js",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 56,
+          "index": 246
+        },
+        "end": {
+          "line": 33,
+          "column": 1,
+          "index": 1152
+        }
+      }
+    },
+    "renderId": 3,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  subgraph cluster_group_12 {\n    id=12;\n    label=\"if\";\n    color=\"gray\";\n    fontcolor=\"yellow\";\n  }\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "recursiveStaircaseIT(2)",
+    "chapterGroup": "uncategorized",
+    "chapter": "recursive-staircase",
+    "algo": "recursive-staircase_recursiveStaircaseIT",
+    "testLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/__test__/recursiveStaircaseIT.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 75,
+          "index": 180
+        },
+        "end": {
+          "line": 17,
+          "column": 3,
+          "index": 745
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseIT.js",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 56,
+          "index": 246
+        },
+        "end": {
+          "line": 33,
+          "column": 1,
+          "index": 1152
+        }
+      }
+    },
+    "renderId": 4,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">2</FONT></TD>\n  </TR>\n</TABLE>>];\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">2</FONT></TD>\n  </TR>\n</TABLE>>];\n  subgraph cluster_group_12 {\n    id=12;\n    label=\"if\";\n    color=\"gray\";\n    fontcolor=\"yellow\";\n  }\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "recursiveStaircaseIT(3)",
+    "chapterGroup": "uncategorized",
+    "chapter": "recursive-staircase",
+    "algo": "recursive-staircase_recursiveStaircaseIT",
+    "testLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/__test__/recursiveStaircaseIT.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 75,
+          "index": 180
+        },
+        "end": {
+          "line": 17,
+          "column": 3,
+          "index": 745
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseIT.js",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 56,
+          "index": 246
+        },
+        "end": {
+          "line": 33,
+          "column": 1,
+          "index": 1152
+        }
+      }
+    },
+    "renderId": 5,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">3</FONT></TD>\n  </TR>\n</TABLE>>];\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">3</FONT></TD>\n  </TR>\n</TABLE>>];\n  subgraph cluster_group_13 {\n    id=13;\n    label=\"for\";\n    color=\"gray\";\n    fontcolor=\"yellow\";\n    subgraph cluster_group_16 {\n      id=16;\n      label=\"for#0\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n  }\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "recursiveStaircaseIT(4)",
+    "chapterGroup": "uncategorized",
+    "chapter": "recursive-staircase",
+    "algo": "recursive-staircase_recursiveStaircaseIT",
+    "testLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/__test__/recursiveStaircaseIT.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 75,
+          "index": 180
+        },
+        "end": {
+          "line": 17,
+          "column": 3,
+          "index": 745
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseIT.js",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 56,
+          "index": 246
+        },
+        "end": {
+          "line": 33,
+          "column": 1,
+          "index": 1152
+        }
+      }
+    },
+    "renderId": 6,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">4</FONT></TD>\n  </TR>\n</TABLE>>];\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">4</FONT></TD>\n  </TR>\n</TABLE>>];\n  subgraph cluster_group_13 {\n    id=13;\n    label=\"for\";\n    color=\"gray\";\n    fontcolor=\"yellow\";\n    subgraph cluster_group_16 {\n      id=16;\n      label=\"for#0\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_33 {\n      id=33;\n      label=\"for#1\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n  }\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "recursiveStaircaseIT(5)",
+    "chapterGroup": "uncategorized",
+    "chapter": "recursive-staircase",
+    "algo": "recursive-staircase_recursiveStaircaseIT",
+    "testLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/__test__/recursiveStaircaseIT.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 75,
+          "index": 180
+        },
+        "end": {
+          "line": 17,
+          "column": 3,
+          "index": 745
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseIT.js",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 56,
+          "index": 246
+        },
+        "end": {
+          "line": 33,
+          "column": 1,
+          "index": 1152
+        }
+      }
+    },
+    "renderId": 7,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">5</FONT></TD>\n  </TR>\n</TABLE>>];\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">5</FONT></TD>\n  </TR>\n</TABLE>>];\n  subgraph cluster_group_13 {\n    id=13;\n    label=\"for\";\n    color=\"gray\";\n    fontcolor=\"yellow\";\n    subgraph cluster_group_16 {\n      id=16;\n      label=\"for#0\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_33 {\n      id=33;\n      label=\"for#1\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_50 {\n      id=50;\n      label=\"for#2\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n  }\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "recursiveStaircaseIT(6)",
+    "chapterGroup": "uncategorized",
+    "chapter": "recursive-staircase",
+    "algo": "recursive-staircase_recursiveStaircaseIT",
+    "testLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/__test__/recursiveStaircaseIT.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 75,
+          "index": 180
+        },
+        "end": {
+          "line": 17,
+          "column": 3,
+          "index": 745
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseIT.js",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 56,
+          "index": 246
+        },
+        "end": {
+          "line": 33,
+          "column": 1,
+          "index": 1152
+        }
+      }
+    },
+    "renderId": 8,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">6</FONT></TD>\n  </TR>\n</TABLE>>];\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">6</FONT></TD>\n  </TR>\n</TABLE>>];\n  subgraph cluster_group_13 {\n    id=13;\n    label=\"for\";\n    color=\"gray\";\n    fontcolor=\"yellow\";\n    subgraph cluster_group_16 {\n      id=16;\n      label=\"for#0\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_33 {\n      id=33;\n      label=\"for#1\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_50 {\n      id=50;\n      label=\"for#2\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_67 {\n      id=67;\n      label=\"for#3\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n  }\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "recursiveStaircaseIT(7)",
+    "chapterGroup": "uncategorized",
+    "chapter": "recursive-staircase",
+    "algo": "recursive-staircase_recursiveStaircaseIT",
+    "testLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/__test__/recursiveStaircaseIT.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 75,
+          "index": 180
+        },
+        "end": {
+          "line": 17,
+          "column": 3,
+          "index": 745
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseIT.js",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 56,
+          "index": 246
+        },
+        "end": {
+          "line": 33,
+          "column": 1,
+          "index": 1152
+        }
+      }
+    },
+    "renderId": 9,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">7</FONT></TD>\n  </TR>\n</TABLE>>];\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">7</FONT></TD>\n  </TR>\n</TABLE>>];\n  subgraph cluster_group_13 {\n    id=13;\n    label=\"for\";\n    color=\"gray\";\n    fontcolor=\"yellow\";\n    subgraph cluster_group_16 {\n      id=16;\n      label=\"for#0\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_33 {\n      id=33;\n      label=\"for#1\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_50 {\n      id=50;\n      label=\"for#2\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_67 {\n      id=67;\n      label=\"for#3\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_84 {\n      id=84;\n      label=\"for#4\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n  }\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "recursiveStaircaseIT(8)",
+    "chapterGroup": "uncategorized",
+    "chapter": "recursive-staircase",
+    "algo": "recursive-staircase_recursiveStaircaseIT",
+    "testLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/__test__/recursiveStaircaseIT.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 75,
+          "index": 180
+        },
+        "end": {
+          "line": 17,
+          "column": 3,
+          "index": 745
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseIT.js",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 56,
+          "index": 246
+        },
+        "end": {
+          "line": 33,
+          "column": 1,
+          "index": 1152
+        }
+      }
+    },
+    "renderId": 10,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">8</FONT></TD>\n  </TR>\n</TABLE>>];\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">8</FONT></TD>\n  </TR>\n</TABLE>>];\n  subgraph cluster_group_13 {\n    id=13;\n    label=\"for\";\n    color=\"gray\";\n    fontcolor=\"yellow\";\n    subgraph cluster_group_16 {\n      id=16;\n      label=\"for#0\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_33 {\n      id=33;\n      label=\"for#1\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_50 {\n      id=50;\n      label=\"for#2\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_67 {\n      id=67;\n      label=\"for#3\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_84 {\n      id=84;\n      label=\"for#4\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_101 {\n      id=101;\n      label=\"for#5\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n  }\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "recursiveStaircaseIT(9)",
+    "chapterGroup": "uncategorized",
+    "chapter": "recursive-staircase",
+    "algo": "recursive-staircase_recursiveStaircaseIT",
+    "testLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/__test__/recursiveStaircaseIT.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 75,
+          "index": 180
+        },
+        "end": {
+          "line": 17,
+          "column": 3,
+          "index": 745
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseIT.js",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 56,
+          "index": 246
+        },
+        "end": {
+          "line": 33,
+          "column": 1,
+          "index": 1152
+        }
+      }
+    },
+    "renderId": 11,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">9</FONT></TD>\n  </TR>\n</TABLE>>];\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">9</FONT></TD>\n  </TR>\n</TABLE>>];\n  subgraph cluster_group_13 {\n    id=13;\n    label=\"for\";\n    color=\"gray\";\n    fontcolor=\"yellow\";\n    subgraph cluster_group_16 {\n      id=16;\n      label=\"for#0\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_33 {\n      id=33;\n      label=\"for#1\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_50 {\n      id=50;\n      label=\"for#2\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_67 {\n      id=67;\n      label=\"for#3\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_84 {\n      id=84;\n      label=\"for#4\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_101 {\n      id=101;\n      label=\"for#5\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_118 {\n      id=118;\n      label=\"for#6\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n  }\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "recursiveStaircaseIT(10)",
+    "chapterGroup": "uncategorized",
+    "chapter": "recursive-staircase",
+    "algo": "recursive-staircase_recursiveStaircaseIT",
+    "testLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/__test__/recursiveStaircaseIT.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 75,
+          "index": 180
+        },
+        "end": {
+          "line": 17,
+          "column": 3,
+          "index": 745
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/uncategorized/recursive-staircase/recursiveStaircaseIT.js",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 56,
+          "index": 246
+        },
+        "end": {
+          "line": 33,
+          "column": 1,
+          "index": 1152
+        }
+      }
+    },
+    "renderId": 12,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">10</FONT></TD>\n  </TR>\n</TABLE>>];\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">stairsNum</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">10</FONT></TD>\n  </TR>\n</TABLE>>];\n  subgraph cluster_group_13 {\n    id=13;\n    label=\"for\";\n    color=\"gray\";\n    fontcolor=\"yellow\";\n    subgraph cluster_group_16 {\n      id=16;\n      label=\"for#0\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_33 {\n      id=33;\n      label=\"for#1\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_50 {\n      id=50;\n      label=\"for#2\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_67 {\n      id=67;\n      label=\"for#3\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_84 {\n      id=84;\n      label=\"for#4\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_101 {\n      id=101;\n      label=\"for#5\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_118 {\n      id=118;\n      label=\"for#6\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n    subgraph cluster_group_135 {\n      id=135;\n      label=\"for#7\";\n      color=\"gray\";\n      fontcolor=\"yellow\";\n    }\n  }\n  2[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  }
+]

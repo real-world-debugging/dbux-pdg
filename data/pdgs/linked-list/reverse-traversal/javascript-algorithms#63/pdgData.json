@@ -1,0 +1,40 @@
+[
+  {
+    "pdgTitle": "reverseTraversal({head,tail,compare}, ƒ (anonymous))",
+    "chapterGroup": "linked-list",
+    "chapter": "reverse-traversal",
+    "algo": "reverse-traversal_reverseTraversal",
+    "testLoc": {
+      "filePath": "src/algorithms/linked-list/reverse-traversal/__test__/reverseTraversal.test.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 59,
+          "index": 230
+        },
+        "end": {
+          "line": 18,
+          "column": 3,
+          "index": 577
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/linked-list/reverse-traversal/reverseTraversal.js",
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 63,
+          "index": 492
+        },
+        "end": {
+          "line": 24,
+          "column": 1,
+          "index": 553
+        }
+      }
+    },
+    "renderId": 1,
+    "failedReason": "Selected context (#16) did not return anything."
+  }
+]

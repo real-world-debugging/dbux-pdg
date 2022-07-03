@@ -1,0 +1,1528 @@
+[
+  {
+    "pdgTitle": "isPowerOfTwo(1)",
+    "chapterGroup": "math",
+    "chapter": "bits",
+    "algo": "bits_isPowerOfTwo",
+    "testLoc": {
+      "filePath": "src/algorithms/math/bits/__test__/isPowerOfTwo.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 58,
+          "index": 139
+        },
+        "end": {
+          "line": 19,
+          "column": 3,
+          "index": 733
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/math/bits/isPowerOfTwo.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45,
+          "index": 99
+        },
+        "end": {
+          "line": 7,
+          "column": 1,
+          "index": 144
+        }
+      }
+    },
+    "renderId": 1,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">true</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 7 [id=e1];\n  2 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  3 [id=3,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">1</TD>\n    <TD ID=\"3\" TITLE=\"3\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  4 [id=4,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">-</TD>\n    <TD ID=\"4\" TITLE=\"4\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  5 [id=5,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">&#38;</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  6 [id=6,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">0</TD>\n    <TD ID=\"6\" TITLE=\"6\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">true</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 4 [id=e1];\n  2 -> 5 [id=e2];\n  3 -> 4 [id=e3];\n  4 -> 5 [id=e4];\n  5 -> 7 [id=e5];\n  6 -> 7 [id=e6];\n  2 -> 3 -> 4 -> 5 -> 6 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "isPowerOfTwo(2)",
+    "chapterGroup": "math",
+    "chapter": "bits",
+    "algo": "bits_isPowerOfTwo",
+    "testLoc": {
+      "filePath": "src/algorithms/math/bits/__test__/isPowerOfTwo.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 58,
+          "index": 139
+        },
+        "end": {
+          "line": 19,
+          "column": 3,
+          "index": 733
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/math/bits/isPowerOfTwo.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45,
+          "index": 99
+        },
+        "end": {
+          "line": 7,
+          "column": 1,
+          "index": 144
+        }
+      }
+    },
+    "renderId": 2,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">2</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">true</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 7 [id=e1];\n  2 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">2</FONT></TD>\n  </TR>\n</TABLE>>];\n  3 [id=3,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">1</TD>\n    <TD ID=\"3\" TITLE=\"3\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  4 [id=4,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">-</TD>\n    <TD ID=\"4\" TITLE=\"4\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  5 [id=5,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">&#38;</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  6 [id=6,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">0</TD>\n    <TD ID=\"6\" TITLE=\"6\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">true</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 4 [id=e1];\n  2 -> 5 [id=e2];\n  3 -> 4 [id=e3];\n  4 -> 5 [id=e4];\n  5 -> 7 [id=e5];\n  6 -> 7 [id=e6];\n  2 -> 3 -> 4 -> 5 -> 6 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "isPowerOfTwo(3)",
+    "chapterGroup": "math",
+    "chapter": "bits",
+    "algo": "bits_isPowerOfTwo",
+    "testLoc": {
+      "filePath": "src/algorithms/math/bits/__test__/isPowerOfTwo.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 58,
+          "index": 139
+        },
+        "end": {
+          "line": 19,
+          "column": 3,
+          "index": 733
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/math/bits/isPowerOfTwo.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45,
+          "index": 99
+        },
+        "end": {
+          "line": 7,
+          "column": 1,
+          "index": 144
+        }
+      }
+    },
+    "renderId": 3,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">3</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">false</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 7 [id=e1];\n  2 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">3</FONT></TD>\n  </TR>\n</TABLE>>];\n  3 [id=3,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">1</TD>\n    <TD ID=\"3\" TITLE=\"3\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  4 [id=4,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">-</TD>\n    <TD ID=\"4\" TITLE=\"4\"><FONT COLOR=\"lightblue\">2</FONT></TD>\n  </TR>\n</TABLE>>];\n  5 [id=5,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">&#38;</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">2</FONT></TD>\n  </TR>\n</TABLE>>];\n  6 [id=6,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">0</TD>\n    <TD ID=\"6\" TITLE=\"6\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">false</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 4 [id=e1];\n  2 -> 5 [id=e2];\n  3 -> 4 [id=e3];\n  4 -> 5 [id=e4];\n  5 -> 7 [id=e5];\n  6 -> 7 [id=e6];\n  2 -> 3 -> 4 -> 5 -> 6 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "isPowerOfTwo(4)",
+    "chapterGroup": "math",
+    "chapter": "bits",
+    "algo": "bits_isPowerOfTwo",
+    "testLoc": {
+      "filePath": "src/algorithms/math/bits/__test__/isPowerOfTwo.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 58,
+          "index": 139
+        },
+        "end": {
+          "line": 19,
+          "column": 3,
+          "index": 733
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/math/bits/isPowerOfTwo.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45,
+          "index": 99
+        },
+        "end": {
+          "line": 7,
+          "column": 1,
+          "index": 144
+        }
+      }
+    },
+    "renderId": 4,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">4</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">true</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 7 [id=e1];\n  2 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">4</FONT></TD>\n  </TR>\n</TABLE>>];\n  3 [id=3,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">1</TD>\n    <TD ID=\"3\" TITLE=\"3\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  4 [id=4,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">-</TD>\n    <TD ID=\"4\" TITLE=\"4\"><FONT COLOR=\"lightblue\">3</FONT></TD>\n  </TR>\n</TABLE>>];\n  5 [id=5,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">&#38;</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  6 [id=6,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">0</TD>\n    <TD ID=\"6\" TITLE=\"6\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">true</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 4 [id=e1];\n  2 -> 5 [id=e2];\n  3 -> 4 [id=e3];\n  4 -> 5 [id=e4];\n  5 -> 7 [id=e5];\n  6 -> 7 [id=e6];\n  2 -> 3 -> 4 -> 5 -> 6 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "isPowerOfTwo(5)",
+    "chapterGroup": "math",
+    "chapter": "bits",
+    "algo": "bits_isPowerOfTwo",
+    "testLoc": {
+      "filePath": "src/algorithms/math/bits/__test__/isPowerOfTwo.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 58,
+          "index": 139
+        },
+        "end": {
+          "line": 19,
+          "column": 3,
+          "index": 733
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/math/bits/isPowerOfTwo.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45,
+          "index": 99
+        },
+        "end": {
+          "line": 7,
+          "column": 1,
+          "index": 144
+        }
+      }
+    },
+    "renderId": 5,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">5</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">false</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 7 [id=e1];\n  2 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">5</FONT></TD>\n  </TR>\n</TABLE>>];\n  3 [id=3,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">1</TD>\n    <TD ID=\"3\" TITLE=\"3\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  4 [id=4,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">-</TD>\n    <TD ID=\"4\" TITLE=\"4\"><FONT COLOR=\"lightblue\">4</FONT></TD>\n  </TR>\n</TABLE>>];\n  5 [id=5,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">&#38;</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">4</FONT></TD>\n  </TR>\n</TABLE>>];\n  6 [id=6,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">0</TD>\n    <TD ID=\"6\" TITLE=\"6\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">false</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 4 [id=e1];\n  2 -> 5 [id=e2];\n  3 -> 4 [id=e3];\n  4 -> 5 [id=e4];\n  5 -> 7 [id=e5];\n  6 -> 7 [id=e6];\n  2 -> 3 -> 4 -> 5 -> 6 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "isPowerOfTwo(6)",
+    "chapterGroup": "math",
+    "chapter": "bits",
+    "algo": "bits_isPowerOfTwo",
+    "testLoc": {
+      "filePath": "src/algorithms/math/bits/__test__/isPowerOfTwo.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 58,
+          "index": 139
+        },
+        "end": {
+          "line": 19,
+          "column": 3,
+          "index": 733
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/math/bits/isPowerOfTwo.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45,
+          "index": 99
+        },
+        "end": {
+          "line": 7,
+          "column": 1,
+          "index": 144
+        }
+      }
+    },
+    "renderId": 6,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">6</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">false</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 7 [id=e1];\n  2 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">6</FONT></TD>\n  </TR>\n</TABLE>>];\n  3 [id=3,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">1</TD>\n    <TD ID=\"3\" TITLE=\"3\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  4 [id=4,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">-</TD>\n    <TD ID=\"4\" TITLE=\"4\"><FONT COLOR=\"lightblue\">5</FONT></TD>\n  </TR>\n</TABLE>>];\n  5 [id=5,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">&#38;</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">4</FONT></TD>\n  </TR>\n</TABLE>>];\n  6 [id=6,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">0</TD>\n    <TD ID=\"6\" TITLE=\"6\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">false</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 4 [id=e1];\n  2 -> 5 [id=e2];\n  3 -> 4 [id=e3];\n  4 -> 5 [id=e4];\n  5 -> 7 [id=e5];\n  6 -> 7 [id=e6];\n  2 -> 3 -> 4 -> 5 -> 6 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "isPowerOfTwo(7)",
+    "chapterGroup": "math",
+    "chapter": "bits",
+    "algo": "bits_isPowerOfTwo",
+    "testLoc": {
+      "filePath": "src/algorithms/math/bits/__test__/isPowerOfTwo.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 58,
+          "index": 139
+        },
+        "end": {
+          "line": 19,
+          "column": 3,
+          "index": 733
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/math/bits/isPowerOfTwo.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45,
+          "index": 99
+        },
+        "end": {
+          "line": 7,
+          "column": 1,
+          "index": 144
+        }
+      }
+    },
+    "renderId": 7,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">7</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">false</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 7 [id=e1];\n  2 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">7</FONT></TD>\n  </TR>\n</TABLE>>];\n  3 [id=3,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">1</TD>\n    <TD ID=\"3\" TITLE=\"3\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  4 [id=4,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">-</TD>\n    <TD ID=\"4\" TITLE=\"4\"><FONT COLOR=\"lightblue\">6</FONT></TD>\n  </TR>\n</TABLE>>];\n  5 [id=5,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">&#38;</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">6</FONT></TD>\n  </TR>\n</TABLE>>];\n  6 [id=6,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">0</TD>\n    <TD ID=\"6\" TITLE=\"6\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">false</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 4 [id=e1];\n  2 -> 5 [id=e2];\n  3 -> 4 [id=e3];\n  4 -> 5 [id=e4];\n  5 -> 7 [id=e5];\n  6 -> 7 [id=e6];\n  2 -> 3 -> 4 -> 5 -> 6 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "isPowerOfTwo(8)",
+    "chapterGroup": "math",
+    "chapter": "bits",
+    "algo": "bits_isPowerOfTwo",
+    "testLoc": {
+      "filePath": "src/algorithms/math/bits/__test__/isPowerOfTwo.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 58,
+          "index": 139
+        },
+        "end": {
+          "line": 19,
+          "column": 3,
+          "index": 733
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/math/bits/isPowerOfTwo.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45,
+          "index": 99
+        },
+        "end": {
+          "line": 7,
+          "column": 1,
+          "index": 144
+        }
+      }
+    },
+    "renderId": 8,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">8</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">true</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 7 [id=e1];\n  2 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">8</FONT></TD>\n  </TR>\n</TABLE>>];\n  3 [id=3,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">1</TD>\n    <TD ID=\"3\" TITLE=\"3\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  4 [id=4,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">-</TD>\n    <TD ID=\"4\" TITLE=\"4\"><FONT COLOR=\"lightblue\">7</FONT></TD>\n  </TR>\n</TABLE>>];\n  5 [id=5,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">&#38;</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  6 [id=6,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">0</TD>\n    <TD ID=\"6\" TITLE=\"6\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">true</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 4 [id=e1];\n  2 -> 5 [id=e2];\n  3 -> 4 [id=e3];\n  4 -> 5 [id=e4];\n  5 -> 7 [id=e5];\n  6 -> 7 [id=e6];\n  2 -> 3 -> 4 -> 5 -> 6 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "isPowerOfTwo(9)",
+    "chapterGroup": "math",
+    "chapter": "bits",
+    "algo": "bits_isPowerOfTwo",
+    "testLoc": {
+      "filePath": "src/algorithms/math/bits/__test__/isPowerOfTwo.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 58,
+          "index": 139
+        },
+        "end": {
+          "line": 19,
+          "column": 3,
+          "index": 733
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/math/bits/isPowerOfTwo.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45,
+          "index": 99
+        },
+        "end": {
+          "line": 7,
+          "column": 1,
+          "index": 144
+        }
+      }
+    },
+    "renderId": 9,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">9</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">false</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 7 [id=e1];\n  2 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">9</FONT></TD>\n  </TR>\n</TABLE>>];\n  3 [id=3,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">1</TD>\n    <TD ID=\"3\" TITLE=\"3\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  4 [id=4,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">-</TD>\n    <TD ID=\"4\" TITLE=\"4\"><FONT COLOR=\"lightblue\">8</FONT></TD>\n  </TR>\n</TABLE>>];\n  5 [id=5,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">&#38;</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">8</FONT></TD>\n  </TR>\n</TABLE>>];\n  6 [id=6,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">0</TD>\n    <TD ID=\"6\" TITLE=\"6\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">false</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 4 [id=e1];\n  2 -> 5 [id=e2];\n  3 -> 4 [id=e3];\n  4 -> 5 [id=e4];\n  5 -> 7 [id=e5];\n  6 -> 7 [id=e6];\n  2 -> 3 -> 4 -> 5 -> 6 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "isPowerOfTwo(16)",
+    "chapterGroup": "math",
+    "chapter": "bits",
+    "algo": "bits_isPowerOfTwo",
+    "testLoc": {
+      "filePath": "src/algorithms/math/bits/__test__/isPowerOfTwo.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 58,
+          "index": 139
+        },
+        "end": {
+          "line": 19,
+          "column": 3,
+          "index": 733
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/math/bits/isPowerOfTwo.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45,
+          "index": 99
+        },
+        "end": {
+          "line": 7,
+          "column": 1,
+          "index": 144
+        }
+      }
+    },
+    "renderId": 10,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">16</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">true</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 7 [id=e1];\n  2 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">16</FONT></TD>\n  </TR>\n</TABLE>>];\n  3 [id=3,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">1</TD>\n    <TD ID=\"3\" TITLE=\"3\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  4 [id=4,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">-</TD>\n    <TD ID=\"4\" TITLE=\"4\"><FONT COLOR=\"lightblue\">15</FONT></TD>\n  </TR>\n</TABLE>>];\n  5 [id=5,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">&#38;</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  6 [id=6,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">0</TD>\n    <TD ID=\"6\" TITLE=\"6\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">true</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 4 [id=e1];\n  2 -> 5 [id=e2];\n  3 -> 4 [id=e3];\n  4 -> 5 [id=e4];\n  5 -> 7 [id=e5];\n  6 -> 7 [id=e6];\n  2 -> 3 -> 4 -> 5 -> 6 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "isPowerOfTwo(23)",
+    "chapterGroup": "math",
+    "chapter": "bits",
+    "algo": "bits_isPowerOfTwo",
+    "testLoc": {
+      "filePath": "src/algorithms/math/bits/__test__/isPowerOfTwo.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 58,
+          "index": 139
+        },
+        "end": {
+          "line": 19,
+          "column": 3,
+          "index": 733
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/math/bits/isPowerOfTwo.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45,
+          "index": 99
+        },
+        "end": {
+          "line": 7,
+          "column": 1,
+          "index": 144
+        }
+      }
+    },
+    "renderId": 11,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">23</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">false</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 7 [id=e1];\n  2 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">23</FONT></TD>\n  </TR>\n</TABLE>>];\n  3 [id=3,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">1</TD>\n    <TD ID=\"3\" TITLE=\"3\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  4 [id=4,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">-</TD>\n    <TD ID=\"4\" TITLE=\"4\"><FONT COLOR=\"lightblue\">22</FONT></TD>\n  </TR>\n</TABLE>>];\n  5 [id=5,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">&#38;</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">22</FONT></TD>\n  </TR>\n</TABLE>>];\n  6 [id=6,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">0</TD>\n    <TD ID=\"6\" TITLE=\"6\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">false</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 4 [id=e1];\n  2 -> 5 [id=e2];\n  3 -> 4 [id=e3];\n  4 -> 5 [id=e4];\n  5 -> 7 [id=e5];\n  6 -> 7 [id=e6];\n  2 -> 3 -> 4 -> 5 -> 6 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "isPowerOfTwo(32)",
+    "chapterGroup": "math",
+    "chapter": "bits",
+    "algo": "bits_isPowerOfTwo",
+    "testLoc": {
+      "filePath": "src/algorithms/math/bits/__test__/isPowerOfTwo.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 58,
+          "index": 139
+        },
+        "end": {
+          "line": 19,
+          "column": 3,
+          "index": 733
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/math/bits/isPowerOfTwo.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45,
+          "index": 99
+        },
+        "end": {
+          "line": 7,
+          "column": 1,
+          "index": 144
+        }
+      }
+    },
+    "renderId": 12,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">32</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">true</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 7 [id=e1];\n  2 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">32</FONT></TD>\n  </TR>\n</TABLE>>];\n  3 [id=3,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">1</TD>\n    <TD ID=\"3\" TITLE=\"3\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  4 [id=4,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">-</TD>\n    <TD ID=\"4\" TITLE=\"4\"><FONT COLOR=\"lightblue\">31</FONT></TD>\n  </TR>\n</TABLE>>];\n  5 [id=5,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">&#38;</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  6 [id=6,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">0</TD>\n    <TD ID=\"6\" TITLE=\"6\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">true</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 4 [id=e1];\n  2 -> 5 [id=e2];\n  3 -> 4 [id=e3];\n  4 -> 5 [id=e4];\n  5 -> 7 [id=e5];\n  6 -> 7 [id=e6];\n  2 -> 3 -> 4 -> 5 -> 6 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "isPowerOfTwo(127)",
+    "chapterGroup": "math",
+    "chapter": "bits",
+    "algo": "bits_isPowerOfTwo",
+    "testLoc": {
+      "filePath": "src/algorithms/math/bits/__test__/isPowerOfTwo.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 58,
+          "index": 139
+        },
+        "end": {
+          "line": 19,
+          "column": 3,
+          "index": 733
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/math/bits/isPowerOfTwo.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45,
+          "index": 99
+        },
+        "end": {
+          "line": 7,
+          "column": 1,
+          "index": 144
+        }
+      }
+    },
+    "renderId": 13,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">127</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">false</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 7 [id=e1];\n  2 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">127</FONT></TD>\n  </TR>\n</TABLE>>];\n  3 [id=3,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">1</TD>\n    <TD ID=\"3\" TITLE=\"3\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  4 [id=4,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">-</TD>\n    <TD ID=\"4\" TITLE=\"4\"><FONT COLOR=\"lightblue\">126</FONT></TD>\n  </TR>\n</TABLE>>];\n  5 [id=5,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">&#38;</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">126</FONT></TD>\n  </TR>\n</TABLE>>];\n  6 [id=6,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">0</TD>\n    <TD ID=\"6\" TITLE=\"6\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">false</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 4 [id=e1];\n  2 -> 5 [id=e2];\n  3 -> 4 [id=e3];\n  4 -> 5 [id=e4];\n  5 -> 7 [id=e5];\n  6 -> 7 [id=e6];\n  2 -> 3 -> 4 -> 5 -> 6 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  },
+  {
+    "pdgTitle": "isPowerOfTwo(128)",
+    "chapterGroup": "math",
+    "chapter": "bits",
+    "algo": "bits_isPowerOfTwo",
+    "testLoc": {
+      "filePath": "src/algorithms/math/bits/__test__/isPowerOfTwo.test.js",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 58,
+          "index": 139
+        },
+        "end": {
+          "line": 19,
+          "column": 3,
+          "index": 733
+        }
+      }
+    },
+    "algoLoc": {
+      "filePath": "src/algorithms/math/bits/isPowerOfTwo.js",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45,
+          "index": 99
+        },
+        "end": {
+          "line": 7,
+          "column": 1,
+          "index": 144
+        }
+      }
+    },
+    "renderId": 14,
+    "screenshots": [
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">128</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">true</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 7 [id=e1];\n  2 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 16
+      },
+      {
+        "sameAs": 0,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 6
+      },
+      {
+        "sameAs": 1,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 7
+      },
+      {
+        "sameAs": 2,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 8
+      },
+      {
+        "sameAs": 3,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 9
+      },
+      {
+        "sameAs": 4,
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 10
+      },
+      {
+        "dot": "digraph {\n  bgcolor=\"#222222\";\n  fontsize=\"14\";\n  node[color=\"white\", fontcolor=\"white\"];\n  node [fontsize=\"14\"];\n  edge[arrowsize=0.9, arrowhead=\"open\", color=\"#AAAAFF\", fontcolor=\"gray\"];\n  labeljust=l;\n  color=\"gray\";\n  fontcolor=\"yellow\";\n  2 [id=2,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">number</TD>\n    <TD ID=\"2\" TITLE=\"2\"><FONT COLOR=\"lightblue\">128</FONT></TD>\n  </TR>\n</TABLE>>];\n  3 [id=3,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">1</TD>\n    <TD ID=\"3\" TITLE=\"3\"><FONT COLOR=\"lightblue\">1</FONT></TD>\n  </TR>\n</TABLE>>];\n  4 [id=4,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">-</TD>\n    <TD ID=\"4\" TITLE=\"4\"><FONT COLOR=\"lightblue\">127</FONT></TD>\n  </TR>\n</TABLE>>];\n  5 [id=5,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">&#38;</TD>\n    <TD ID=\"5\" TITLE=\"5\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  6 [id=6,fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">0</TD>\n    <TD ID=\"6\" TITLE=\"6\"><FONT COLOR=\"lightblue\">0</FONT></TD>\n  </TR>\n</TABLE>>];\n  7 [id=7,color=\"green\",fontsize=\"14\",shape=record,label=<\n<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\">\n  <TR>\n    <TD BORDER=\"1\" SIDES=\"R\">ret</TD>\n    <TD ID=\"7\" TITLE=\"7\"><FONT COLOR=\"lightblue\">true</FONT></TD>\n  </TR>\n</TABLE>>];\n  2 -> 4 [id=e1];\n  2 -> 5 [id=e2];\n  3 -> 4 [id=e3];\n  4 -> 5 [id=e4];\n  5 -> 7 [id=e5];\n  6 -> 7 [id=e6];\n  2 -> 3 -> 4 -> 5 -> 6 -> 7[style=invis,weight=2];\n}",
+        "settings": {
+          "connectedOnly": true,
+          "extraVertical": true,
+          "params": false,
+          "anim": true
+        },
+        "rootSummaryMode": 15
+      }
+    ]
+  }
+]
