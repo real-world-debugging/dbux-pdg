@@ -1,3 +1,4 @@
+import Script from 'next/script';
 
 const requiredScripts = [
   '//d3js.org/d3.v5.min.js',
