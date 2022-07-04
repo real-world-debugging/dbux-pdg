@@ -13,7 +13,7 @@ export function publicResourcePath(...args) {
  */
 export function makeHref(path, query) {
   return {
-    pathname: normalizePath(BasePath, path),
+    pathname: normalizePath(/* BasePath, */ path),
     query
   };
 }
