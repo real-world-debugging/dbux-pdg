@@ -5,9 +5,9 @@ import { useCallback } from 'react';
 export default function InfoBar() {
   const showInfo = useCallback(() => {
     alert(
-      //`Three important things:\n\n` +
-      `1. This page ONLY hosts the gallery with visual results of running Dbux-PDG on a diverset of algorithms from the javascript-algorithms repository.\n\n` +
-      `2. If you want to try it yourself, please be patient, as we are still preparing deployment of the latest version of Dbux and documentation for Dbux-PDG.\n\n` +
+      `Welcome to the Dbux-PDG Gallery! Explanations:\n` +
+      `1. This page ONLY hosts the gallery with visual results of running Dbux-PDG on a diverse set of algorithms from the javascript-algorithms repository.\n` +
+      `2. If you want to try out Dbux-PDG, please follow the instructions at: https://domiii.github.io/dbux/pdg\n` +
       `3. Feel free to reach out to us directly (e.g. on Discord) in case of any questions, concerns or feedback.`
     );
   }, []);
