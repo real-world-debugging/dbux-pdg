@@ -70,3 +70,7 @@ a {
 .lh-1 {
   line-height: 1;
 }
+
+.nowrap {
+  white-space: nowrap;
+}
