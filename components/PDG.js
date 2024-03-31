@@ -81,17 +81,17 @@ export default function PDG(props) {
   const [index, setIndex] = useState(0);
 
   if (exerciseId === undefined) {
-    return (<h1>
+    return (<h2>
       <BackBtn />
       <div className="space-1" />
       <pre>
         {`404 - PDG not found`}
       </pre>
-    </h1>);
+    </h2>);
   }
 
-  const success = renderData.success !== false;
-  const { testLoc, algoLoc, screenshots } = renderData;
+  const success = renderData.success !== false && !renderData.failedReason;
+  const { testLoc, algoLoc, failedReason, screenshots } = renderData;
 
   // linksEl
   let linksEl;
@@ -110,13 +110,19 @@ export default function PDG(props) {
   let graphContentEl;
   if (!success) {
     graphContentEl = <>
-      <h1 className="mt-4 text-center">{renderData.failedReason}</h1>
-      <pre className="">{renderData.error}</pre>
+      <h2 className="mt-4 text-center alert-danger">Failed: {failedReason}</h2>
+      <pre className="alert-danger">{renderData.error}</pre>
     </>;
   }
-  else if (screenshots?.[index].crash) {
+  else if (!screenshots) {
     graphContentEl = <>
-      <h1 className="mt-4 text-center">crash: true</h1>
+      <h2 className="mt-4 text-center alert-danger">Could not find PDG data</h2>
+      <pre className="">{JSON.stringify(renderData, null, 2)}</pre>
+    </>;
+  }
+  else if (screenshots[index].crash) {
+    graphContentEl = <>
+      <h2 className="mt-4 text-center">crash: true</h2>
       <pre className="">{screenshots[index].error}</pre>
     </>;
   }
@@ -127,17 +133,17 @@ export default function PDG(props) {
     }
     else if (sameAs !== undefined) {
       const originIndex = getSameAsOrigin(screenshots, index);
-      graphContentEl = <h1 className="mt-4 text-center">
+      graphContentEl = <h2 className="mt-4 text-center">
         Graph same as {originIndex}
         <button className="mx-4 p-2" onClick={() => setIndex(originIndex)}>Go</button>
-      </h1>;
+      </h2>;
     }
     else {
       throw new Error(`Invalid screenshot missing "dot" or "sameAs", ${JSON.stringify(screenshots[index])}`);
     }
   }
 
-  const modeButtons = screenshots.map((screenshot, i) =>
+  const modeButtons = screenshots?.map((screenshot, i) =>
     <button key={i} className={cl(
       "mx-1 p-2 btn btn-info",
       {
@@ -156,7 +162,7 @@ export default function PDG(props) {
       <button className="border-gray" onClick={() => setIndex(index - 1)} disabled={index === 0}>
         &lt;
       </button>
-      <button className="border-gray" onClick={() => setIndex(index + 1)} disabled={index === screenshots.length - 1}>
+      <button className="border-gray" onClick={() => setIndex(index + 1)} disabled={index === screenshots?.length - 1}>
         &gt;
       </button>
 

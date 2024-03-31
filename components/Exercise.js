@@ -13,14 +13,14 @@ export default function Exercise(props) {
   }
 
   if (!pdgs) {
-    return (<p className="text-danger">
+    return (<p className="alert-danger">
       {exercise.label}
       <span> (failed: no PDG data available)</span>
     </p>);
   }
 
   if (!Array.isArray(pdgs)) {
-    return <p className="text-danger">
+    return <p className="alert-danger">
       {exercise.label}
       <span> (failed: "{pdgs.failedReason}")</span>
     </p>;
@@ -47,7 +47,7 @@ export default function Exercise(props) {
         }
         else {
           return <li key={i}>
-            <PDGLink linkData={linkData} className="btn btn-primary text-danger">
+            <PDGLink linkData={linkData} className="btn btn-primary alert-danger">
               PDG failed: {renderData.failedReason}
             </PDGLink>
           </li>;
